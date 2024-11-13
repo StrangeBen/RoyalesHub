@@ -1,5 +1,7 @@
 /** @format */
 
+import { Link } from "react-router-dom";
+
 const Footer =
 	() => {
 		return (
@@ -64,43 +66,51 @@ const Footer =
 						<h3 className="text-xl font-semibold mb-4 text-yellow-500">
 							Our Services
 						</h3>
-						<ul className="space-y-2">
-							<li>
-								<a
-									href="#"
-									className="text-gray-400 hover:text-yellow-500"
-								>
-									Graphic
-									Design
-								</a>
-							</li>
-							<li>
-								<a
-									href="#"
-									className="text-gray-400 hover:text-yellow-500"
-								>
-									Web Design
-									and
-									Development
-								</a>
-							</li>
-							<li>
-								<a
-									href="#"
-									className="text-gray-400 hover:text-yellow-500"
-								>
-									Editing
-								</a>
-							</li>
-							<li>
-								<a
-									href="#"
-									className="text-gray-400 hover:text-yellow-500"
-								>
-									Digital
-									Marketing
-								</a>
-							</li>
+						<ul className="flex flex-col gap-2">
+							<Link to="/services">
+								<li>
+									<a
+										href="#"
+										className="text-gray-400 hover:text-yellow-500"
+									>
+										Graphic
+										Design
+									</a>
+								</li>
+							</Link>
+							<Link to="/services">
+								<li>
+									<a
+										href="#"
+										className="text-gray-400 hover:text-yellow-500"
+									>
+										Web Design
+										and
+										Development
+									</a>
+								</li>
+							</Link>
+							<Link to="/services">
+								<li>
+									<a
+										href="#"
+										className="text-gray-400 hover:text-yellow-500"
+									>
+										Editing
+									</a>
+								</li>
+							</Link>
+							<Link to="/services">
+								<li>
+									<a
+										href="#"
+										className="text-gray-400 hover:text-yellow-500"
+									>
+										Digital
+										Marketing
+									</a>
+								</li>
+							</Link>
 						</ul>
 					</div>
 

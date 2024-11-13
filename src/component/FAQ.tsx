@@ -66,7 +66,7 @@ const FAQ = () => {
 	};
 
 	return (
-		<div className="bg-black py-16 px-[200px]">
+		<div className="bg-black py-16 lg:px-[200px]">
 			{/* Section Header */}
 			<div className="text-center mb-12">
 				<div className="flex justify-center items-center text-[25px] gap-3">
@@ -101,7 +101,7 @@ const FAQ = () => {
 										index,
 									)
 								}
-								className={`w-full text-left py-4 px-4 flex justify-between items-center ${
+								className={`w-full text-left py-4 px-2 lg:px-8 flex justify-between items-center ${
 									activeIndex ===
 									index
 										? "bg-yellow-500 text-black"

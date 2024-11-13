@@ -1,5 +1,7 @@
 /** @format */
 
+import { Link } from "react-router-dom";
+
 const LatestNews =
 	() => {
 		const newsItems =
@@ -115,10 +117,12 @@ const LatestNews =
 										.excerpt
 								}
 							</p>
-							<button className="mt-4 bg-yellow-400 hover:bg-yellow-500 text-white py-2 px-4 rounded-lg">
-								Read More
-								&gt;
-							</button>
+							<Link to="/blog">
+								<button className="mt-4 bg-yellow-400 hover:bg-yellow-500 text-white py-2 px-4 rounded-lg">
+									Read More
+									&gt;
+								</button>
+							</Link>
 						</div>
 					</div>
 
@@ -153,10 +157,12 @@ const LatestNews =
 												item.title
 											}
 										</h2>
-										<button className="mt-4 text-yellow-400 font-bold hover:text-yellow-500">
-											Read
-											More...{" "}
-										</button>
+										<Link to="/blog">
+											<button className="mt-4 text-yellow-400 font-bold hover:text-yellow-500">
+												Read
+												More...{" "}
+											</button>
+										</Link>
 									</div>
 								),
 							)}

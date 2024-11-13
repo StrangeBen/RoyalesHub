@@ -1,6 +1,7 @@
 /** @format */
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const OurPortfolio =
 	() => {
@@ -151,9 +152,11 @@ const OurPortfolio =
 											: "opacity-0"
 									}`}
 								>
-									<button className="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500">
-										Visit Now
-									</button>
+									<Link to="/portfolio">
+										<button className="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500">
+											Visit Now
+										</button>
+									</Link>
 								</div>
 							</div>
 						),

@@ -5,23 +5,23 @@ import CardGrid from "./Card/CardGrid";
 const OurServices =
 	() => {
 		return (
-			<div className="flex  p-[100px] gap-28 bg-black">
-				<div className="w-[45%]">
+			<div className="lg:flex  lg:p-[100px] lg:gap-28 bg-black">
+				<div className="text-center lg:w-[45%] pt-10">
 					<h2 className="text-white text-[15px] font-semibold">
 						What We Are{" "}
 						<span className="text-yellow-500">
 							Offering
 						</span>
 					</h2>
-					<div className="my-4 border-t-4 border-yellow-500 w-[200px]"></div>
-					<h1 className="text-5xl font-semibold leading-[65px] text-white">
+					<div className="my-8 lg:my-4 border-t-4 border-yellow-500 w-[200px] m-auto"></div>
+					<h1 className="text-5xl font-semibold leading-[65px] px-[10px] lg:px-0  text-white ">
 						<span className="text-yellow-500">
 							Services{" "}
 						</span>
 						We Can Offer
 						You !
 					</h1>
-					<p className="py-[40px] text-white">
+					<p className="py-[40px] px-4 lg:px-0   text-white">
 						Lorem, ipsum
 						dolor sit amet
 						consectetur
@@ -85,7 +85,7 @@ const OurServices =
 						Hire Us
 					</button>
 				</div>
-				<div className="w-[50%]">
+				<div className="px-10 py-12 w-[100%] lg:w-[50%]">
 					<CardGrid />
 				</div>
 			</div>
